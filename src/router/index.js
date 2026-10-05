@@ -18,8 +18,24 @@ const routes = [
     name: 'contact',
 
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+  
+    },
+  {
+    path: '/grade',
+    name: 'grade',
+
+    component: () => import(/* webpackChunkName: "about" */ '../views/Grade.vue')
+  
+
+  },
+  {
+    path: '/golds',
+    name: 'golds',
+
+    component: () => import(/* webpackChunkName: "about" */ '../views/Api_golds.vue')
   }
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
